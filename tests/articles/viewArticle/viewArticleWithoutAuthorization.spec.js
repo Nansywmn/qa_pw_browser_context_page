@@ -11,7 +11,7 @@ test.beforeEach(async ({ page1, user, articleWithoutTags }) => {
   await createArticle(page1, articleWithoutTags);
 });
 
-test('View an article updated by another user', async ({
+test('View own article in "Global Feed" without authorization', async ({
   page2,
   user,
   articleWithoutTags,
